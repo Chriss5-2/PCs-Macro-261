@@ -57,12 +57,25 @@ hadoop jar C:\PC-1.0.jar SalesCountry.SalesCountryDriver /input_pc1 /output_pc1/
 2. ¿Cuántas actas de nacimiento se emitieron por Año y Provincia? (cons_1.2)
 ```bash
 # Año: ANIO_REGISTRO - [0]
+# Acta: TIPO_ACTA -[2]
 # Provincia: PROVINCIA_DOM_SOL - [5]
 hadoop jar C:\PC-1.0.jar SalesCountry.SalesCountryDriver /input_pc1 /output_pc1/cons_1/cons_1.2
 ```
-3. ¿Cuál es la distribución de trámites por Género y Mes en un año específico? (cons_1.3)
-4. Ranking de provincias con mayor emisión de copias según el Tipo de Acta (cons_1.4)
 
+3. ¿Cuál es la distribución de trámites por Género y Mes entre los años 2023 y 2026? (cons_1.3)
+```bash
+# Año: ANIO_REGISTRO - [0]
+# Mes: MES_REGISTRO - [1]
+# Género: DE_GENERO - [3]
+hadoop jar C:\PC-1.0.jar SalesCountry.SalesCountryDriver /input_pc1 /output_pc1/cons_1/cons_1.3
+```
+
+4. ¿Qué provincia tuvo más trámites por cada mes en cada año?
+```bash
+# Provincias: PROVINCIA_DOM_SOL - [5]
+# Acta: TIPO_ACTA - [2]
+hadoop jar C:\PC-1.0.jar SalesCountry.SalesCountryDriver /input_pc1 /output_pc1/cons_1/cons_1.4
+```
 ### 2. Encontrar el promedio, la media y la desviación de un campo (Columna) a selección (cons_2)
 
 ### 3. Hacer búsqueda de un subtexto general que pueda buscar en varios campos de textos y me dé como resultado(s) uno o varios registros completos (cons_3)
