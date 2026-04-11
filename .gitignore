@@ -1,0 +1,8 @@
+# Eliminar residuos de libreras pandas, polars y python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+venv/
+env/
+prueba.py
