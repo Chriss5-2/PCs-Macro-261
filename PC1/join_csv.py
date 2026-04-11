@@ -1,7 +1,7 @@
 import polars as pl
 import os
 
-carpeta = "CSV's"
+carpeta = "CSV's_base"
 
 columnas_objetivo = [
     "ANIO_REGISTRO",
@@ -85,7 +85,7 @@ if not dfs:
     raise RuntimeError("No se pudo leer ningun CSV valido.")
 
 df_final = pl.concat(dfs, how="vertical_relaxed")
-df_final.write_csv("Registros.csv")
+df_final.write_csv("CSV_final/Registros.csv")
 
 if errores:
     print("Archivos con error de lectura:")
