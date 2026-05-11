@@ -7,3 +7,4 @@
 ## Prácticas Calificadas
 - [PC1](PC1)
 - [PC2](PC2)
+- [Parcial](Parcial)
